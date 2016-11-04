@@ -1,0 +1,61 @@
+用户表 user
+u_id   		------- 	用户id(int)
+username 	------- 	用户名称(varchar)
+password 	-------         用户密码(char)
+email		------- 	邮箱(varchar)
+mobile 		------- 	联系方式(varchar)
+
+用户详情表  user_info
+id		-------		自增id(int)
+u_id		-------		用户id(int)
+diploma		-------		学历文凭(varchar)
+area_id		-------		地区id(int)
+work_exp	-------		工作经历(text)
+work_year 	-------		工作时间(int)
+introduction	-------		自我介绍（text）
+
+后台管理员表 admin
+a_id		-------		管理员id(int)
+a_name		-------		管理员名称(varchar)
+	
+简历表 CV
+id  		-------		自增id(int)
+title		-------		简历标题(varchar)
+content		-------		简历内容(text)
+u_id		-------		用户id(int)
+
+企业表 company
+com_id     	-------		自增id(int)
+com_name	-------		企业名称(varchar)
+com_type	-------		企业类型(int)
+area_id		-------		地区id(int)
+com_address	-------		企业详细地址(varchar)
+com_profile	-------		企业简介(text)
+
+
+
+职位表  position
+p_id		-------		自增的id(int)
+c_id				职位分类id(int)
+diploma 	-------		文凭(varchar)
+welfare		-------		福利待遇(varchar)
+work_exp	-------		工作经历(text)
+work_place	-------		工作地点(varchar)
+salary		-------		薪资(decimal)
+com_id		-------		企业id(int)
+
+pos_catagory   (职位类型表)
+cate_id		-------		id(int)
+cate_name	-------		类型名称（varchar）
+parent_id	-------		父类id（int）
+
+field （行业领域表）
+f_id		-------		id(int)
+f_name		-------		领域名称（varchar）
+parent_id	-------		父类id（int）
+
+address（地区表）
+area_id		-------		地区id(int)
+parent_id	-------		父类id（int）
+area_name	-------		地区名称（varchar）
+sort		-------		排序（int）
