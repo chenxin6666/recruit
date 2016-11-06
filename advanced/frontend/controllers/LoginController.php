@@ -3,7 +3,8 @@ namespace frontend\controllers;
 use yii\web\Controller;
 use yii;
 use yii\data\Pagination;
-use app\models\Test;
+use app\models\Admin;
+header("Content/type:text/html;charset=utf-8");
 class LoginController extends Controller
 {
     public $enableCsrfValidation = false; //禁止表单提交
@@ -12,7 +13,43 @@ class LoginController extends Controller
       return $this->render('login.html');
     }
     public function actionDologin(){
-      echo "ok";
+      //接值
+      $res = \Yii::$app->request;
+      $db  = \Yii::$app->db;
+      $username = $res->post('username');
+      $pwd      = $res->post('pwd');
+      // echo $username;
+      // echo $pwd;
+      // die;
+      $userObj = new Admin;
+      $arr = Admin::find();
+      $str = $arr->select("id")
+                ->from('admin')
+                ->where(['username'=>"$username"])
+                ->asArray()
+                ->all();
+      if(!$str){
+          die("Sorry, user name does not exist");
+      }else{
+        $res = $arr->select("id")
+                ->from('admin')
+                ->where(['username'=>"$username",'pwd'=>"$pwd"])
+                ->asArray()
+                ->all();
+        $re = implode(array_column($res,'id'));
+        // echo $re;die;
+        // print_r($re);die;
+        if($re){
+            $session = \YII::$app->session;
+            $session->open();
+            $session->set('username',$username);
+            $session->set('admin_id',$re);
+            
+            $this->redirect('?r=index/index');
+        }else{
+          die('Account or password error');
+        }
+      }
     }
     public function actionShow(){
          $test=new Test();   //实例化model模型

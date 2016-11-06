@@ -11,7 +11,10 @@ class IndexController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index.html');
+        $session = \YII::$app->session;
+        $name = $session->get("username");
+        // echo $name;die;
+        return $this->render('index.html',['name'=>$name]);
     }
 
     public function actionAdd()

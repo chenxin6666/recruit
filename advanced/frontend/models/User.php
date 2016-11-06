@@ -1,9 +1,8 @@
 <?php
-/**
- * 后台管理员表模型
- */
 namespace app\models;
-use yii\db\ActiveRecord;
+
+use Yii;
+
 /**
  * This is the model class for table "resource".
  *
@@ -13,14 +12,13 @@ use yii\db\ActiveRecord;
  * @property string $manufacturers
  * @property integer $price
  */
-class Admin extends ActiveRecord
+class Test extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'admin';
+        return 'user';
     }
-
 }
