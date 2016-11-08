@@ -4,12 +4,14 @@ use yii\web\Controller;
 use yii;
 use yii\data\Pagination;
 use app\models\Admin;
-header("Content/type:text/html;charset=utf-8");
+header("Content-type:text/html;charset=utf-8");
 class LoginController extends Controller
 {
+    public $layout = false;     //去掉公共的头部和底部
     public $enableCsrfValidation = false; //禁止表单提交
 
     public function actionIndex(){
+      // echo "你好";die;
       return $this->render('login.html');
     }
     public function actionDologin(){
@@ -17,7 +19,7 @@ class LoginController extends Controller
       $res = \Yii::$app->request;
       $db  = \Yii::$app->db;
       $username = $res->post('username');
-      $pwd      = $res->post('pwd');
+      $pwd      = md5($res->post('pwd'));
       // echo $username;
       // echo $pwd;
       // die;

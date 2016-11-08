@@ -284,14 +284,14 @@
 
 							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 								<li>
-									<a href="?r=ucenter/index">
+									<a href="#">
 										<i class="icon-cog"></i>
 										设置
 									</a>
 								</li>
 
 								<li>
-									<a href="?r=ucenter/index">
+									<a href="#">
 										<i class="icon-user"></i>
 										个人资料
 									</a>
@@ -389,7 +389,7 @@
 								</li>
 
 								<li>
-									<a href="?r=company">
+									<a href="buttons.html">
 										<i class="icon-double-angle-right"></i>
 										添加企业
 									</a>
@@ -699,11 +699,15 @@
 								</small>
 								
 							</h1>
-							<!-- <h6>
-								我的推广链接:<a href="">http://www.weijie.com</a>
+							<h6>
+								我的推广链接:
+								<a href="?r=ucenter/click&id=<?=$id;?>">
+									<font size="5"><b><?=$pro_link;?></b></font>
+								</a>
 								<br>
-								我的推广链接已被访问 <font size="24"><b>100次</b></font>
-							</h3> -->
+								我的推广链接已被访问:
+								<font size="6"><b><?=$click_num;?>次</b></font>
+							</h3>
 						</div><!-- /.page-header -->
 
 						<div class="row">
