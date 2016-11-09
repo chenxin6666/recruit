@@ -9,37 +9,19 @@ use yii\data\Pagination;
 use app\models\Admin;
 use app\models\CustomerType;
 header("Content-type:text/html;charset=utf-8");
-class LoginController extends Controller
+class RegistController extends Controller
 {
     public $layout = false;     //去掉公共的头部和底部
     public $enableCsrfValidation = false; //禁止表单提交
 
+    
     /**
-     * 显示用户登录的页面
-     * @return [type] [description]
-     */
-    public function actionIndex(){
-      //查询出所有的用户类型  循环到注册页面的下拉框中
-      // $type = new CustomerType;
-      $arr = CustomerType::find();
-      $str = $arr->select('*')
-                ->from('customer_type')
-                ->asArray()
-                ->all();
-      $type_id = array_column($str,'type_id');
-      $type_name = array_column($str,'type_name');
-      $type = array_combine($type_id, $type_name);
-      // print_r($type);die;
-      // echo "你好";die;
-      return $this->render('login.html',['type'=>$type]);
-    }
-    /**
-     * 验证登录
+     * 验证注册
      * @param   $[username] 用户名
      * @param   $[pwd] 密码
      * @return [type] [description]
      */
-    public function actionDologin(){
+    public function actionDoregist(){
       //接值
       $res = \Yii::$app->request;
       $db  = \Yii::$app->db;

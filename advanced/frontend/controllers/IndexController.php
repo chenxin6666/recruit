@@ -7,7 +7,7 @@ use app\models\Test;
 
 class IndexController extends Controller
 {
-    public $layout = false;
+    public $layout = "common";
     public $enableCsrfValidation = false; //禁止表单提交
 
     public function actionIndex()

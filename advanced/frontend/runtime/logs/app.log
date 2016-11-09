@@ -26039,3 +26039,2519 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1478575648.9078
     'REQUEST_TIME' => 1478575648
 ]
+2016-11-08 13:27:49 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 13:27:49 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478575133'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '伟杰'
+    'admin_id' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62344'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478575133; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478582869.3564
+    'REQUEST_TIME' => 1478582869
+]
+2016-11-08 13:27:54 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\Session::clear()' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\frontend\controllers\LoginController.php(72): yii\base\Component->__call('clear', Array)
+#1 D:\phpStudy\WWW\advanced\frontend\controllers\LoginController.php(72): yii\web\Session->clear()
+#2 [internal function]: frontend\controllers\LoginController->actionLogin_out()
+#3 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login_out', Array)
+#6 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('login/login_out', Array)
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-08 13:27:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/login_out'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/login_out'
+    'QUERY_STRING' => 'r=login/login_out'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62344'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478582874.9021
+    'REQUEST_TIME' => 1478582874
+]
+2016-11-08 13:39:00 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 13:38:59 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'login/dologin'
+]
+
+$_POST = [
+    'username' => 'admin'
+    'pwd' => 'admin'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2088'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/dologin'
+    'QUERY_STRING' => 'r=login/dologin'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62612'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'CONTENT_LENGTH' => '24'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=login/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478583539.7153
+    'REQUEST_TIME' => 1478583539
+]
+2016-11-08 13:56:18 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 13:56:18 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2172'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63156'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=login/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478584578.7006
+    'REQUEST_TIME' => 1478584578
+]
+2016-11-08 13:59:16 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: name' in D:\phpStudy\WWW\advanced\frontend\views\layouts\main.php:279
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\frontend\views\layouts\main.php(279): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\phpStudy\\WWW...', 279, Array)
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\phpStudy\\WWW...')
+#2 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#3 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(frontend\controllers\IndexController))
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\xEF\xBB\xBF\r\n\r\n\t\t<div c...')
+#5 D:\phpStudy\WWW\advanced\frontend\controllers\IndexController.php(18): yii\base\Controller->render('index.html', Array)
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('index/index', Array)
+#11 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-11-08 13:59:16 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2172'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63216'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478584756.4585
+    'REQUEST_TIME' => 1478584756
+]
+2016-11-08 14:02:29 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: name' in D:\phpStudy\WWW\advanced\frontend\views\layouts\common.php:279
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\frontend\views\layouts\common.php(279): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\phpStudy\\WWW...', 279, Array)
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\phpStudy\\WWW...')
+#2 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#3 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(frontend\controllers\IndexController))
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\xEF\xBB\xBF\r\n\r\n\t\t<div c...')
+#5 D:\phpStudy\WWW\advanced\frontend\controllers\IndexController.php(18): yii\base\Controller->render('index.html', Array)
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('index/index', Array)
+#11 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-11-08 14:02:29 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2172'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63286'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478584949.2928
+    'REQUEST_TIME' => 1478584949
+]
+2016-11-08 14:04:37 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 14:04:37 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2224'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63296'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478585077.0927
+    'REQUEST_TIME' => 1478585077
+]
+2016-11-08 14:12:11 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 14:12:11 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2224'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63350'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478585531.1656
+    'REQUEST_TIME' => 1478585531
+]
+2016-11-08 14:19:02 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'public' (T_PUBLIC)' in D:\phpStudy\WWW\advanced\frontend\controllers\UcenterController.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 14:19:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'ucenter/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2224'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=ucenter/index'
+    'QUERY_STRING' => 'r=ucenter/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63433'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478585942.401
+    'REQUEST_TIME' => 1478585942
+]
+2016-11-08 14:19:57 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 14:19:56 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'ucenter/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478580533'
+    'ace_settings' => '{\"sidebar-collapsed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2284'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=ucenter/index'
+    'QUERY_STRING' => 'r=ucenter/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63437'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478580533; ace.settings=%7B%22sidebar-collapsed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478585996.4716
+    'REQUEST_TIME' => 1478585996
+]
+2016-11-08 14:50:23 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 14:50:22 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'ucenter/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2204'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=ucenter/index'
+    'QUERY_STRING' => 'r=ucenter/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64676'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478587822.515
+    'REQUEST_TIME' => 1478587822
+]
+2016-11-08 15:00:13 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 15:00:12 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'ucenter/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2236'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=ucenter/index'
+    'QUERY_STRING' => 'r=ucenter/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64835'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478588412.5118
+    'REQUEST_TIME' => 1478588412
+]
+2016-11-08 15:06:02 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resume/resume_list".' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('resume/resume_l...', Array)
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-08 15:06:02 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'resume/resume_list'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2236'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=resume/resume_list'
+    'QUERY_STRING' => 'r=resume/resume_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64891'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478588762.6051
+    'REQUEST_TIME' => 1478588762
+]
+2016-11-08 15:06:15 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resume/resume_add".' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('resume/resume_a...', Array)
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-08 15:06:15 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'resume/resume_add'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2236'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=resume/resume_add'
+    'QUERY_STRING' => 'r=resume/resume_add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64905'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478588775.8106
+    'REQUEST_TIME' => 1478588775
+]
+2016-11-08 15:06:55 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 15:06:55 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64933'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478588815.7898
+    'REQUEST_TIME' => 1478588815
+]
+2016-11-08 15:15:37 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 15:15:37 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'typography/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2364'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=typography/index'
+    'QUERY_STRING' => 'r=typography/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64990'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478589337.1445
+    'REQUEST_TIME' => 1478589337
+]
+2016-11-08 15:28:32 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 15:28:32 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2324'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65051'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478590112.7715
+    'REQUEST_TIME' => 1478590112
+]
+2016-11-08 15:35:36 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 15:35:36 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2312'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65110'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478590536.238
+    'REQUEST_TIME' => 1478590536
+]
+2016-11-08 15:37:49 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "company/company_list".' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('company/company...', Array)
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-08 15:37:49 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'company/company_list'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2312'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=company/company_list'
+    'QUERY_STRING' => 'r=company/company_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65153'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478590669.4812
+    'REQUEST_TIME' => 1478590669
+]
+2016-11-08 15:42:09 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\phpStudy\WWW\advanced\frontend\views\layouts\common.php' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(frontend\controllers\IndexController))
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\xEF\xBB\xBF\t\t\r\n\t\t\r\n\r\n\t\t...')
+#2 D:\phpStudy\WWW\advanced\frontend\controllers\IndexController.php(18): yii\base\Controller->render('index.html', Array)
+#3 [internal function]: frontend\controllers\IndexController->actionIndex()
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('index/index', Array)
+#8 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-08 15:42:09 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2312'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65218'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478590929.9117
+    'REQUEST_TIME' => 1478590929
+]
+2016-11-08 15:42:20 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\phpStudy\WWW\advanced\frontend\views\layouts\common.php' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(frontend\controllers\IndexController))
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\xEF\xBB\xBF\t\t\r\n\t\t\r\n\r\n\t\t...')
+#2 D:\phpStudy\WWW\advanced\frontend\controllers\IndexController.php(18): yii\base\Controller->render('index.html', Array)
+#3 [internal function]: frontend\controllers\IndexController->actionIndex()
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('index/index', Array)
+#8 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-08 15:42:20 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2312'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65225'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478590940.5778
+    'REQUEST_TIME' => 1478590940
+]
+2016-11-08 15:42:55 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\phpStudy\WWW\advanced\frontend\views\layouts\common.php' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(frontend\controllers\IndexController))
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\xEF\xBB\xBF\t\t\r\n\t\t\r\n\r\n\t\t...')
+#2 D:\phpStudy\WWW\advanced\frontend\controllers\IndexController.php(18): yii\base\Controller->render('index.html', Array)
+#3 [internal function]: frontend\controllers\IndexController->actionIndex()
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('index/index', Array)
+#8 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-08 15:42:55 [127.0.0.1][-][465vhvsf1o6ccji30f89pl49o5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '465vhvsf1o6ccji30f89pl49o5'
+    '_csrf-frontend' => '250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2312'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65236'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=465vhvsf1o6ccji30f89pl49o5; _csrf-frontend=250e934ab970fd55d564a2f65fc53af8faa6837b8ad2fd5eed995618bf32f197a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22rk2zqvEE7uO4Kl1MyJ0khj7uDIEsg0LG%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478590975.2459
+    'REQUEST_TIME' => 1478590975
+]
+2016-11-08 15:44:30 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 15:44:30 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478585936'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2304'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65320'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478585936; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478591070.3634
+    'REQUEST_TIME' => 1478591070
+]
+2016-11-08 15:52:13 [127.0.0.1][-][6t764945had124trqlefb9afo2][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 15:52:13 [127.0.0.1][-][6t764945had124trqlefb9afo2][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2092'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49219'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478591533.9459
+    'REQUEST_TIME' => 1478591533
+]
+2016-11-08 16:01:27 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 16:01:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/index'
+    'QUERY_STRING' => 'r=login/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49438'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478592087.4891
+    'REQUEST_TIME' => 1478592087
+]
+2016-11-08 16:08:26 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 16:08:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2496'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/index'
+    'QUERY_STRING' => 'r=login/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49496'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478592505.967
+    'REQUEST_TIME' => 1478592505
+]
+2016-11-08 16:16:45 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 16:16:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/dologin'
+]
+
+$_POST = [
+    'username' => 'ADMIN'
+    'pwd' => 'admin'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2496'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/dologin'
+    'QUERY_STRING' => 'r=login/dologin'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49630'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'CONTENT_LENGTH' => '24'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478593004.8062
+    'REQUEST_TIME' => 1478593004
+]
+2016-11-08 16:34:01 [127.0.0.1][-][6t764945had124trqlefb9afo2][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 16:34:01 [127.0.0.1][-][6t764945had124trqlefb9afo2][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2476'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49791'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478594041.6294
+    'REQUEST_TIME' => 1478594041
+]
+2016-11-08 16:41:45 [127.0.0.1][-][6t764945had124trqlefb9afo2][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 16:41:45 [127.0.0.1][-][6t764945had124trqlefb9afo2][info][application] $_GET = [
+    'r' => 'login/login_out'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2556'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/login_out'
+    'QUERY_STRING' => 'r=login/login_out'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49865'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478594505.5644
+    'REQUEST_TIME' => 1478594505
+]
+2016-11-08 16:56:18 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\models\CustomerType' in file: D:\phpStudy\WWW\advanced\frontend/models/CustomerType.php. Namespace missing?' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Cust...')
+#1 D:\phpStudy\WWW\advanced\frontend\controllers\LoginController.php(24): spl_autoload_call('app\\models\\Cust...')
+#2 [internal function]: frontend\controllers\LoginController->actionIndex()
+#3 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('login/index', Array)
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-08 16:56:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2588'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/index'
+    'QUERY_STRING' => 'r=login/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49987'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478595378.9093
+    'REQUEST_TIME' => 1478595378
+]
+2016-11-08 16:56:37 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\models\CustomerType' in file: D:\phpStudy\WWW\advanced\frontend/models/CustomerType.php. Namespace missing?' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Cust...')
+#1 D:\phpStudy\WWW\advanced\frontend\controllers\LoginController.php(23): spl_autoload_call('app\\models\\Cust...')
+#2 [internal function]: frontend\controllers\LoginController->actionIndex()
+#3 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('login/index', Array)
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-08 16:56:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2588'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/index'
+    'QUERY_STRING' => 'r=login/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49994'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478595396.9631
+    'REQUEST_TIME' => 1478595396
+]
+2016-11-08 16:58:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in D:\phpStudy\WWW\advanced\frontend\views\login\login.html:230
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\frontend\views\login\login.html(230): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'D:\\phpStudy\\WWW...', 230, Array)
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\\phpStudy\\WWW...')
+#2 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#3 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(frontend\controllers\LoginController))
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('login.html', Array, Object(frontend\controllers\LoginController))
+#5 D:\phpStudy\WWW\advanced\frontend\controllers\LoginController.php(31): yii\base\Controller->render('login.html', Array)
+#6 [internal function]: frontend\controllers\LoginController->actionIndex()
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('login/index', Array)
+#11 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-11-08 16:58:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2588'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/index'
+    'QUERY_STRING' => 'r=login/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50001'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478595486.8834
+    'REQUEST_TIME' => 1478595486
+]
+2016-11-08 16:59:58 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'array_column() expects at least 2 parameters, 1 given' in D:\phpStudy\WWW\advanced\frontend\controllers\LoginController.php:29
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'array_column() ...', 'D:\\phpStudy\\WWW...', 29, Array)
+#1 D:\phpStudy\WWW\advanced\frontend\controllers\LoginController.php(29): array_column(Array)
+#2 [internal function]: frontend\controllers\LoginController->actionIndex()
+#3 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('login/index', Array)
+#7 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-08 16:59:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2588'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/index'
+    'QUERY_STRING' => 'r=login/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50074'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478595597.8695
+    'REQUEST_TIME' => 1478595597
+]
+2016-11-08 17:03:42 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 17:03:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2408'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/index'
+    'QUERY_STRING' => 'r=login/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50116'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478595821.6067
+    'REQUEST_TIME' => 1478595821
+]
+2016-11-08 18:40:52 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 18:40:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478591337'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":1,\"sidebar-fixed\":1,\"breadcrumbs-fixed\":1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2524'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=login/index'
+    'QUERY_STRING' => 'r=login/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50549'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478591337; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A1%2C%22sidebar-fixed%22%3A1%2C%22breadcrumbs-fixed%22%3A1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478601651.7245
+    'REQUEST_TIME' => 1478601651
+]
+2016-11-08 19:24:11 [127.0.0.1][-][6t764945had124trqlefb9afo2][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 19:24:11 [127.0.0.1][-][6t764945had124trqlefb9afo2][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478596737'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":-1,\"sidebar-fixed\":-1,\"breadcrumbs-fixed\":-1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => 'admin'
+    'admin_id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2524'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50830'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478596737; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A-1%2C%22sidebar-fixed%22%3A-1%2C%22breadcrumbs-fixed%22%3A-1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478604251.04
+    'REQUEST_TIME' => 1478604251
+]
+2016-11-08 19:31:52 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-08 19:31:51 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478602137'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":-1,\"sidebar-fixed\":-1,\"breadcrumbs-fixed\":-1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => '6t764945had124trqlefb9afo2'
+    '_csrf-frontend' => 'd910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2524'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50911'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478602137; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A-1%2C%22sidebar-fixed%22%3A-1%2C%22breadcrumbs-fixed%22%3A-1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=6t764945had124trqlefb9afo2; _csrf-frontend=d910a875fd4bd0f90f8a948ad467ac07746243462dacb59318a54fc58ac12494a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pgai2BICuNVYTDz4yXUQeU2F4dlFJu7l%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478604711.9154
+    'REQUEST_TIME' => 1478604711
+]
+2016-11-09 08:39:12 [127.0.0.1][-][kfv4jaku1kob5mp6um7akl2ke1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "company/company_add".' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('company/company...', Array)
+#1 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\phpStudy\WWW\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-09 08:39:12 [127.0.0.1][-][kfv4jaku1kob5mp6um7akl2ke1][info][application] $_GET = [
+    'r' => 'company/company_add'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478650748'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":-1,\"sidebar-fixed\":-1,\"breadcrumbs-fixed\":-1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => 'kfv4jaku1kob5mp6um7akl2ke1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '伟杰'
+    'admin_id' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2136'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=company/company_add'
+    'QUERY_STRING' => 'r=company/company_add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55110'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478650748; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A-1%2C%22sidebar-fixed%22%3A-1%2C%22breadcrumbs-fixed%22%3A-1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=kfv4jaku1kob5mp6um7akl2ke1'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478651952.535
+    'REQUEST_TIME' => 1478651952
+]
+2016-11-09 08:39:15 [127.0.0.1][-][kfv4jaku1kob5mp6um7akl2ke1][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: ' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-09 08:39:12 [127.0.0.1][-][kfv4jaku1kob5mp6um7akl2ke1][info][application] $_GET = [
+    'r' => 'company/company_add'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=132996963-1478175462-&ntime=1478650748'
+    'ace_settings' => '{\"sidebar-collapsed\":-1,\"navbar-fixed\":-1,\"sidebar-fixed\":-1,\"breadcrumbs-fixed\":-1,\"main-container-fixed\":-1}'
+    'advanced-frontend' => 'kfv4jaku1kob5mp6um7akl2ke1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '伟杰'
+    'admin_id' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\PROGRAM FILES (X86)\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\INTEL\\ICLS CLIENT\\;C:\\PROGRAM FILES\\DELL\\DW WLAN CARD;C:\\WINDOWS\\SYSTEM32;C:\\WINDOWS;C:\\WINDOWS\\SYSTEM32\\WBEM;C:\\WINDOWS\\SYSTEM32\\WINDOWSPOWERSHELL\\V1.0\\;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\DAL;C:\\PROGRAM FILES\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\INTEL\\INTEL(R) MANAGEMENT ENGINE COMPONENTS\\IPT;C:\\PROGRAM FILES (X86)\\NVIDIA CORPORATION\\PHYSX\\COMMON;C:\\PROGRAM FILES\\TORTOISESVN\\BIN;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;D:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;E:\\yii\\git\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2136'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/?r=company/company_add'
+    'QUERY_STRING' => 'r=company/company_add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55110'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/advanced/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.bwzhaopin.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D132996963-1478175462-%26ntime%3D1478650748; ace.settings=%7B%22sidebar-collapsed%22%3A-1%2C%22navbar-fixed%22%3A-1%2C%22sidebar-fixed%22%3A-1%2C%22breadcrumbs-fixed%22%3A-1%2C%22main-container-fixed%22%3A-1%7D; advanced-frontend=kfv4jaku1kob5mp6um7akl2ke1'
+    'HTTP_REFERER' => 'http://www.bwzhaopin.com/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_HOST' => 'www.bwzhaopin.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1478651952.535
+    'REQUEST_TIME' => 1478651952
+]
