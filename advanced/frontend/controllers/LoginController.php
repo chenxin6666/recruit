@@ -71,15 +71,15 @@ class LoginController extends Controller
                 ->where(['username'=>"$username",'pwd'=>"$pwd"])
                 ->asArray()
                 ->all();
-        $re = implode(array_column($res,'id'));
+        $id= implode(array_column($res,'id'));
         // echo $re;die;
         // print_r($re);die;
-        if($re){
+        if($id){
             //设置session
             $session = \YII::$app->session;
             $session->open();
             $session->set('username',$username);
-            $session->set('admin_id',$re);
+            $session->set('admin_id',$id);
             
             $this->redirect('?r=index/index');
         }else{
