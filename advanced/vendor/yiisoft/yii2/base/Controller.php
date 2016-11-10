@@ -24,6 +24,7 @@ use Yii;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
+header("content-type:text/html;charset=utf-8");
 class Controller extends Component implements ViewContextInterface
 {
     /**
@@ -82,6 +83,43 @@ class Controller extends Component implements ViewContextInterface
         $this->id = $id;
         $this->module = $module;
         parent::__construct($config);
+        /*
+         * 验证是否有权限
+         */
+        $admin_id= yii::$app->session->get('admin_id');
+
+        if($admin_id){
+
+            if($this->check_acc()==false){
+                echo('么有权限');die;
+            }
+        }else{
+            echo "请重新登陆..";
+        }
+
+    }
+    /*
+     * 验证是否拥有权限
+     */
+    public function check_acc(){
+       $access_list= yii::$app->session->get('access');
+        //var_dump($access_list);die;
+        //通过session获取当前控制器名称
+        $controller=yii::$app->session->get('controller');
+        $action=yii::$app->session->get('action');
+        if($controller=='index'){
+            return true;
+        }
+        if($controller=='login'){
+            return true;
+        }
+        //var_dump('1'.$action.'...'.$controller);die;
+       foreach($access_list as $k=>$v){
+        if($controller==mb_strtolower($v['controller'])&&$action==mb_strtolower($v['action'])){
+            return true;
+        }
+       }
+        return false;
     }
 
     /**
