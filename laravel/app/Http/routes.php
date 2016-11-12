@@ -10,21 +10,22 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-//默认访问目录
- Route::get('/', function () {
-     return view('index/index');
- });
-
-
-Route::get('test/index','TestController@index');
-Route::get('test/addMessage','TestController@addMessage');	
-Route::get('test/delMessage','TestController@delMessage');	
-Route::get('test/modifyMessage','TestController@modifyMessage');	
-Route::get('test/getone','TestController@getone');
+//设置默认访问控制器方法名
+Route::any('/', function () {
+	// echo 123456;
+    return view('index/index');
+});
 Route::any('login/login','LoginController@login');
 Route::any('register/register','RegisterController@register');
 Route::any('register/register_add','RegisterController@register_add');
-
+Route::any('login/loginShow','LoginController@Dologin');
+Route::get('register/captcha/{tmp}', 'RegisterController@captcha');
+// Route::any('/','IndexController@index');//设置默认访问控制器方法名
+// Route::any('test/index','TestController@index'); 
+// Route::get('test/addMessage','TestController@addMessage');	
+// Route::get('test/delMessage','TestController@delMessage');	
+// Route::get('test/modifyMessage','TestController@modifyMessage');	
+// Route::get('test/getone','TestController@getone');
 
 /*
 |--------------------------------------------------------------------------

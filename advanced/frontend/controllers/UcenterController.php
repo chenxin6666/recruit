@@ -11,7 +11,6 @@ header("Content-type:text/html;charset=utf-8");
  */
 class UcenterController extends Controller
 {
-    public $layout = "common";
     public $enableCsrfValidation = false; //禁止表单提交
     /**
      * 展示用户中心的页面

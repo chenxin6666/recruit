@@ -78,7 +78,7 @@ class LoginController extends Controller
             //设置session
             $session = \YII::$app->session;
             $session->open();
-            $session->set('username',$username);
+            $session->set('admin_name',$username);
             $session->set('admin_id',$id);
             
             $this->redirect('?r=index/index');
@@ -88,7 +88,7 @@ class LoginController extends Controller
       }
     }
     public function actionLogin_out(){
-         unset(\Yii::$app->session['username']);
+         unset(\Yii::$app->session['adminname']);
          unset(\Yii::$app->session['admin_id']);
          
          $this->redirect('?r=login/index');

@@ -1,0 +1,301 @@
+<?php 
+use yii\widgets\LinkPager;
+use yii\widgets\ActiveForm;
+?>
+<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+					</script>
+				</div>
+
+				<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<ul class="breadcrumb">
+							<li>
+								<i class="icon-home home-icon"></i>
+								<a href="?r=index/index">后台管理</a>
+							</li>
+
+							<li>
+								<a href="?r=category/cate_add">行业分类管理</a>
+							</li>
+							<li class="active">行业分类列表</li>
+						</ul><!-- .breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+					</div>
+
+					<div class="page-content">
+						<div class="page-header">
+							<h1>
+								职位管理
+								<small>
+									<i class="icon-double-angle-right"></i>
+									职位分类列表 
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+
+<div class="row">
+<div class="col-xs-12">
+<!-- PAGE CONTENT BEGINS -->
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="table-responsive" >
+
+			<button class="checkall">全选</button>
+			<button class="inverse">反选</button>
+			<button id="del_all">批删</button>
+			<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th class="center">
+							<label>
+								
+								选择
+								<span class="lbl"></span>
+							</label>
+						</th>
+						<th>分类名称</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+
+				<tbody id="list_table">
+				<?php if(is_array($category)){?>
+				<?php foreach($category as $k=>$v):;?>
+					<tr id="<?=$v['cate_id']?>" parent="<?=$v['parent_id']?>">
+						<td class="center">
+							<label>
+								<input type="checkbox" name="check" value="<?=$v['cate_id']?>" />
+								<span class="lbl"></span>
+
+							</label>
+						</td>
+						<td class="point_changes" id="<?=$v['cate_id'];?>">
+							<?=$v['_html']?>
+							<img   src="close.gif" onclick="displayData(this);" alt="关闭" />
+							<span id="s<?=$v['cate_id']?>"><?=$v['cate_name'];?></span>	
+							<input type="text" value="<?=$v['cate_name']?>"  style="display:none" class="ipt" id="i<?=$v['cate_id'];?>">
+						</td>
+						
+						<td>
+							<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+								<!-- <button class="btn btn-xs btn-success">
+									<i class="icon-ok bigger-120"></i>
+								</button> -->
+
+								<a href="?r=position/position_modify&id=<?=$v['cate_id'];?>">
+									<button class="btn btn-xs btn-info">
+										<i class="icon-edit bigger-120"></i>
+									</button>
+								</a>
+
+								<a href="javascript:void(0)">
+								<button class="btn btn-xs btn-danger" id="<?=$v['cate_id'];?>">
+									<i class="icon-trash bigger-120"></i>
+								</button></a>
+
+								<!-- <button class="btn btn-xs btn-warning">
+									<i class="icon-flag bigger-120">333</i>
+								</button> -->
+							</div>
+							
+						</td>
+					</tr>
+				<?php endforeach;?>
+				<?php };?>	
+						
+				
+				</tbody>
+			</table>
+		<div>
+		<!-- 分页 -->
+		<center>	
+			<?php
+				echo LinkPager::widget([
+				'pagination' => $pages,
+				]);
+			?>
+			<!-- <a href="index.php?r=position/position_list&page=1">首页</a>
+			<a href="index.php?r=position/list&page=">上一页</a>
+			<a href="index.php?r=position/list&page=">下一页</a>
+			<a href="index.php?r=position/list&page=">末页</a> -->
+		</center>
+		</div><!-- /.table-responsive -->
+	</div><!-- /span -->
+</div><!-- /row -->
+</div>
+
+<!-- basic scripts -->
+<script src="js/jq.js"></script>
+<!--[if !IE]> -->
+<script language="javascript">
+//折叠展示
+function displayData(_self)
+{
+	if(_self.alt == "关闭")
+	{
+		jqshow($(_self).parent().parent().attr('id'), 'hide');
+		$(_self).attr("src", "open.gif");
+		_self.alt = '打开';
+	}
+	else
+	{
+		jqshow($(_self).parent().parent().attr('id'), 'show');
+		$(_self).attr("src", "close.gif");
+		_self.alt = '关闭';
+	}
+}
+
+function jqshow(id,isshow) {
+	var obj = $("#list_table tr[parent='"+id+"']");
+	if (obj.length>0)
+	{
+		obj.each(function(i) {
+			jqshow($(this).attr('id'), isshow);
+		});
+		if (isshow=='hide')
+		{
+			obj.hide();
+		}
+		else
+		{
+			obj.show();
+		}
+	}
+}
+</script>
+
+<script>
+	$(function(){
+		//删除
+		$(".btn-danger").click(function(){
+			var _this = $(this); 
+			var id = $(this).attr('id');
+			$.get('?r=category/cate_del',{id:id},function(msg){
+				if(msg==0){
+					alert('对不起,该分类下有子级分类');return;
+				}
+				if(msg=="ok"){
+					_this.parents('tr').remove();
+				}else{
+					alert('对不起，网络错误');
+				}
+			})
+		})
+	})
+</script>
+
+<script>
+	//页面自动加载
+
+		/*******全选与取消*********/
+		//给类型为all_check的超链接加点击事件 实行全选全不选
+		$(".checkall").click(function(){
+			// alert('checkall');
+			//判断是不是默认选中的 如果是就取消了 如果不是就选择
+			if($("input[name='check']").attr("checked")){
+
+				$("input[name='check']").attr("checked",false);     
+			}else{
+
+				$("input[name='check']").attr("checked",true);      
+			}
+		})
+		/*******反选*********/
+		$('.inverse').click(function(){
+			 //循环所有的复选框 
+			 $("#list_table input:checkbox").each(function () {  	
+
+	            this.checked = !this.checked;
+
+	         })  
+		})
+
+		/* 批量删除 */
+		$("#del_all").click(function(){
+			// 判断是否至少选择一项
+			var checkedNum = $("input[name='check']:checked").length;
+			if(checkedNum == 0) {
+				alert("请选择至少一项！");
+				return;
+			}
+			// 批量选择删除
+			var id_array = [];
+			$("input[name='check']:checked").each(function() {
+				id_array.push($(this).val());
+			});
+			$.ajax({
+				type: "POST",
+				url: "{url:test/test_del}",
+				data: {'ids':id_array.toString()},
+				success: function(result) {
+					// alert(result)
+					if(result=="ok"){
+						$("input[name='check']:checked").parents('tr').remove();
+					}else{
+						alert('批删失败');
+					}
+					// $("[name ='check']:checkbox").attr("checked", false);
+					// window.location.reload();
+				} 
+			})
+			
+			
+			  
+		})
+
+		/**
+		 * 即点即改
+		 */
+		$(document).on("click",".point_change",function(){
+			var id = $(this).attr("id");
+			$("#i"+id).css("display","block");
+			$("#s"+id).css("display","none");
+		})
+		/**
+		 * 鼠标失去焦点时触发修改
+		 */
+		$(document).on("blur",".ipt",function(){
+			// alert(123)
+			var _this = $(this);
+			var val = _this.val();
+			var id = _this.parent().attr("id");
+			 // alert(id)
+			$.ajax({
+				type:"POST",
+				url:"?r=position/position_modify",
+				data:{val:val,id:id},
+				success:function(result){
+					// alert(result);return;
+					if(result=="ok"){
+						$("#i"+id).css("display","none");
+						$("#s"+id).css("display","block");
+						$("#s"+id).html(val);
+					}else{
+						$("#i"+id).css("display","none");
+						$("#s"+id).css("display","block");
+					}
+				}
+			})
+		})
+
+		
+
+</script>

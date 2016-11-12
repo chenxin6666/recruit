@@ -1,5 +1,6 @@
 <?php 
 use yii\widgets\LinkPager;
+use yii\widgets\ActiveForm;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -422,6 +423,13 @@ use yii\widgets\LinkPager;
 										添加企业
 									</a>
 								</li>
+								<li>
+									<a href="?r=company/company_add">
+										<i class="icon-double-angle-right"></i>
+										发布职位
+									</a>
+								</li>
+								
 
 								<!-- <li>
 									<a href="treeview.html">
@@ -581,6 +589,20 @@ use yii\widgets\LinkPager;
 									<a href="?r=category/category_add">
 										<i class="icon-double-angle-right"></i>
 										添加分类
+									</a>
+								</li>
+
+								<li>
+									<a href="?r=position/position_list">
+										<i class="icon-double-angle-right"></i>
+										行业领域分类列表
+									</a>
+								</li>
+
+								<li>
+									<a href="?r=position/position_add">
+										<i class="icon-double-angle-right"></i>
+										增加行业领域分类
 									</a>
 								</li>
 							</ul>

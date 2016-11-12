@@ -5,15 +5,15 @@ use yii;
 use yii\data\Pagination;
 use app\models\Test;
 header("Content-type:text/html;charset=utf-8");
-class IndexController extends Controller
+class IndexController extends CommonController
 {
-    public $layout = "common";
+
     public $enableCsrfValidation = false; //禁止表单提交
 
     public function actionIndex()
     {
         $session = \YII::$app->session;
-        $name = $session->get("username");
+        $name = $session->get("admin_name");
         if(empty($name)){
             die("<script>alert('请先登录');location.href='?r=login/index'</script>");
         }

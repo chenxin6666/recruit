@@ -1,0 +1,163 @@
+<div class="sidebar-collapse" id="sidebar-collapse">
+    <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+</div>
+
+<script type="text/javascript">
+    try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+</script>
+</div>
+
+<div class="main-content">
+    <div class="breadcrumbs" id="breadcrumbs">
+        <script type="text/javascript">
+            try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+        </script>
+
+        <ul class="breadcrumb">
+            <li>
+                <i class="icon-home home-icon"></i>
+                <a href="?r=index/index">后台管理</a>
+            </li>
+
+            <li>
+                <a href="?r=position/position_list">企业管理</a>
+            </li>
+            <li class="active">企业添加</li>
+        </ul><!-- .breadcrumb -->
+
+        <div class="nav-search" id="nav-search">
+            <form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+            </form>
+        </div><!-- #nav-search -->
+    </div>
+
+    <div class="page-content">
+        <div class="page-header">
+            <h1>
+                企业管理
+                <small>
+                    <i class="icon-double-angle-right"></i>
+                    添加企业分类
+                </small>
+            </h1>
+        </div><!-- /.page-header -->
+
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- PAGE CONTENT BEGINS -->
+
+                <form class="form-horizontal" role="form" action="?r=company/company_add" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 企业名称 </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" id="form-field-1" placeholder="企业名称" class="col-xs-10 col-sm-5" name="com_name"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 企业邮箱 </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" placeholder="企业邮箱" class="col-xs-10 col-sm-5" name="com_email"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> 企业类型 </label>
+
+                        <div class="col-sm-9">
+                            <select name="com_type">
+                                <option value="0">请选择企业类型</option>
+                                <?php foreach ($com_category as $key => $value):;?>
+                                    <option value="<?-$value['cate_id'];?>"><?=$value['_html'];?><?=$value['cate_name']?></option>
+                                <?php endforeach;?>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="space-4"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-input-readonly"> 所在地区 </label>
+
+                        <div class="col-sm-9">
+                            <select name="com_area[]" id="com_area">
+                                <option value="0">请选择</option>
+                                <option value="1">中国</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-input-readonly"> 详细地址 </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" placeholder="详细地址" class="col-xs-10 col-sm-5" name="com_address"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-input-readonly"> 企业介绍 </label>
+
+                        <div class="col-sm-9">
+
+                           <textarea name="com_profile" cols="37" rows="10">
+
+                           </textarea>
+                        </div>
+                    </div>
+
+                    <div class="space-4"></div>
+
+
+                    <div class="clearfix form-actions">
+                        <div class="col-md-offset-3 col-md-9">
+                            <button class="btn btn-info" type="submit">
+                                <i class="icon-ok bigger-110"></i>
+                                Submit
+                            </button>
+
+                            &nbsp; &nbsp; &nbsp;
+                            <button class="btn" type="reset">
+                                <i class="icon-undo bigger-110"></i>
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+
+
+                </form>
+                <script src="js/jq.js"></script>
+                <script>
+                    //DOM加载完毕
+                    $(function(){
+                        $(document).on('change','select[name="com_area[]"]',function(){
+                            var _this = $(this);
+                            var area_id = $(this).val();
+                            _this.nextAll().remove();
+
+                            if(area_id==0){
+                                return false;
+                            }                    var url = "?r=company/company_area";
+                            var str = '';
+                            $.get(url,{area_id:area_id},function(msg){
+                                if(msg.length>0){
+                                    str = "<select name='com_area[]' id='com_area'>\
+                                <option value='0'>请选择</option>";
+                                    $(msg).each(function(k,v){
+                                        str += "<option value="+v.area_id+">"+v.area_name+"</option>";
+                                    });
+                                    str += "</select>";
+                                }
+
+                                _this.after(str);
+                            })
+                        },'json');
+                    })
+
+                </script>
