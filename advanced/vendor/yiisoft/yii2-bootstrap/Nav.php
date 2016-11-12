@@ -10,6 +10,7 @@ namespace yii\bootstrap;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
 
 /**
  * Nav renders a nav HTML component.
@@ -32,11 +33,6 @@ use yii\helpers\ArrayHelper;
  *                  '<li class="dropdown-header">Dropdown Header</li>',
  *                  ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
  *             ],
- *         ],
- *         [
- *             'label' => 'Login',
- *             'url' => ['site/login'],
- *             'visible' => Yii::$app->user->isGuest
  *         ],
  *     ],
  *     'options' => ['class' =>'nav-pills'], // set this to nav-tab to get tab-styled navigation
@@ -63,10 +59,8 @@ class Nav extends Widget
      * - linkOptions: array, optional, the HTML attributes of the item's link.
      * - options: array, optional, the HTML attributes of the item container (LI).
      * - active: boolean, optional, whether the item should be on active state or not.
-     * - dropDownOptions: array, optional, the HTML options that will passed to the [[Dropdown]] widget.
      * - items: array|string, optional, the configuration array for creating a [[Dropdown]] widget,
      *   or a string representing the dropdown menu. Note that Bootstrap does not support sub-dropdown menus.
-     * - encode: boolean, optional, whether the label will be HTML-encoded. If set, supersedes the $encodeLabels option for only this item.
      *
      * If a menu item is a string, it will be rendered directly without HTML encoding.
      */
@@ -122,7 +116,7 @@ class Nav extends Widget
         if ($this->dropDownCaret === null) {
             $this->dropDownCaret = Html::tag('b', '', ['class' => 'caret']);
         }
-        Html::addCssClass($this->options, ['widget' => 'nav']);
+        Html::addCssClass($this->options, 'nav');
     }
 
     /**
@@ -177,12 +171,10 @@ class Nav extends Widget
             $active = $this->isItemActive($item);
         }
 
-        if (empty($items)) {
-            $items = '';
-        } else {
+        if ($items !== null) {
             $linkOptions['data-toggle'] = 'dropdown';
-            Html::addCssClass($options, ['widget' => 'dropdown']);
-            Html::addCssClass($linkOptions, ['widget' => 'dropdown-toggle']);
+            Html::addCssClass($options, 'dropdown');
+            Html::addCssClass($linkOptions, 'dropdown-toggle');
             if ($this->dropDownCaret !== '') {
                 $label .= ' ' . $this->dropDownCaret;
             }
@@ -212,7 +204,6 @@ class Nav extends Widget
     protected function renderDropdown($items, $parentItem)
     {
         return Dropdown::widget([
-            'options' => ArrayHelper::getValue($parentItem, 'dropDownOptions', []),
             'items' => $items,
             'encodeLabels' => $this->encodeLabels,
             'clientOptions' => false,

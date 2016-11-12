@@ -7,7 +7,6 @@
 
 namespace yii\caching;
 
-use Yii;
 use yii\base\InvalidConfigException;
 
 /**
@@ -28,7 +27,7 @@ use yii\base\InvalidConfigException;
  *
  * To use MemCache as the cache application component, configure the application as follows,
  *
- * ```php
+ * ~~~
  * [
  *     'components' => [
  *         'cache' => [
@@ -48,7 +47,7 @@ use yii\base\InvalidConfigException;
  *         ],
  *     ],
  * ]
- * ```
+ * ~~~
  *
  * In the above, two memcache servers are used: server1 and server2. You can configure more properties of
  * each server, such as `persistent`, `weight`, `timeout`. Please see [[MemCacheServer]] for available options.
@@ -179,7 +178,7 @@ class MemCache extends Cache
             // $timeout is used for memcache versions that do not have $timeoutms parameter
             $timeout = (int) ($server->timeout / 1000) + (($server->timeout % 1000 > 0) ? 1 : 0);
             if ($paramCount === 9) {
-                $cache->addserver(
+                $cache->addServer(
                     $server->host,
                     $server->port,
                     $server->persistent,
@@ -191,7 +190,7 @@ class MemCache extends Cache
                     $server->timeout
                 );
             } else {
-                $cache->addserver(
+                $cache->addServer(
                     $server->host,
                     $server->port,
                     $server->persistent,
@@ -289,7 +288,6 @@ class MemCache extends Cache
      */
     protected function setValue($key, $value, $duration)
     {
-        $duration = $this->trimDuration($duration);
         $expire = $duration > 0 ? $duration + time() : 0;
 
         return $this->useMemcached ? $this->_cache->set($key, $value, $expire) : $this->_cache->set($key, $value, 0, $expire);
@@ -303,8 +301,6 @@ class MemCache extends Cache
      */
     protected function setValues($data, $duration)
     {
-        $duration = $this->trimDuration($duration);
-
         if ($this->useMemcached) {
             $this->_cache->setMulti($data, $duration > 0 ? $duration + time() : 0);
 
@@ -325,7 +321,6 @@ class MemCache extends Cache
      */
     protected function addValue($key, $value, $duration)
     {
-        $duration = $this->trimDuration($duration);
         $expire = $duration > 0 ? $duration + time() : 0;
 
         return $this->useMemcached ? $this->_cache->add($key, $value, $expire) : $this->_cache->add($key, $value, 0, $expire);
@@ -350,22 +345,5 @@ class MemCache extends Cache
     protected function flushValues()
     {
         return $this->_cache->flush();
-    }
-
-    /**
-     * Trims duration to 30 days (2592000 seconds).
-     * @param integer $duration the number of seconds
-     * @return integer the duration
-     * @since 2.0.7
-     * @see http://php.net/manual/en/memcache.set.php
-     * @see http://php.net/manual/en/memcached.expiration.php
-     */
-    protected function trimDuration($duration)
-    {
-        if ($duration > 2592000) {
-            Yii::warning('Duration has been truncated to 30 days due to Memcache/Memcached limitation.', __METHOD__);
-            return 2592000;
-        }
-        return $duration;
     }
 }

@@ -37,7 +37,7 @@ class SignupCest
     }
 
     /**
-     * @param \tests\codeception\frontend\AcceptanceTester $I
+     * @param \codeception_frontend\AcceptanceTester $I
      * @param \Codeception\Scenario $scenario
      */
     public function testUserSignup($I, $scenario)
@@ -77,6 +77,6 @@ class SignupCest
         ]);
 
         $I->expectTo('see that user logged in');
-        $I->see('Logout (tester)', 'form button[type=submit]');
+        $I->seeLink('Logout (tester)');
     }
 }

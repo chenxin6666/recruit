@@ -114,7 +114,7 @@ class ActiveRecord extends BaseActiveRecord
      */
     public function loadDefaultValues($skipIfSet = true)
     {
-        foreach (static::getTableSchema()->columns as $column) {
+        foreach ($this->getTableSchema()->columns as $column) {
             if ($column->defaultValue !== null && (!$skipIfSet || $this->{$column->name} === null)) {
                 $this->{$column->name} = $column->defaultValue;
             }
@@ -291,15 +291,12 @@ class ActiveRecord extends BaseActiveRecord
      */
     public static function getTableSchema()
     {
-        $tableSchema = static::getDb()
-            ->getSchema()
-            ->getTableSchema(static::tableName());
-
-        if ($tableSchema === null) {
-            throw new InvalidConfigException('The table does not exist: ' . static::tableName());
+        $schema = static::getDb()->getSchema()->getTableSchema(static::tableName());
+        if ($schema !== null) {
+            return $schema;
+        } else {
+            throw new InvalidConfigException("The table does not exist: " . static::tableName());
         }
-
-        return $tableSchema;
     }
 
     /**
@@ -454,11 +451,11 @@ class ActiveRecord extends BaseActiveRecord
             return false;
         }
         $values = $this->getDirtyAttributes($attributes);
-        if (($primaryKeys = static::getDb()->schema->insert(static::tableName(), $values)) === false) {
+        if (($primaryKeys = static::getDb()->schema->insert($this->tableName(), $values)) === false) {
             return false;
         }
         foreach ($primaryKeys as $name => $value) {
-            $id = static::getTableSchema()->columns[$name]->phpTypecast($value);
+            $id = $this->getTableSchema()->columns[$name]->phpTypecast($value);
             $this->setAttribute($name, $id);
             $values[$name] = $id;
         }
@@ -607,7 +604,7 @@ class ActiveRecord extends BaseActiveRecord
         if ($lock !== null) {
             $condition[$lock] = $this->$lock;
         }
-        $result = static::deleteAll($condition);
+        $result = $this->deleteAll($condition);
         if ($lock !== null && !$result) {
             throw new StaleObjectException('The object being deleted is outdated.');
         }
@@ -630,7 +627,7 @@ class ActiveRecord extends BaseActiveRecord
             return false;
         }
 
-        return static::tableName() === $record->tableName() && $this->getPrimaryKey() === $record->getPrimaryKey();
+        return $this->tableName() === $record->tableName() && $this->getPrimaryKey() === $record->getPrimaryKey();
     }
 
     /**

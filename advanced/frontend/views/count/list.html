@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+总条数:<?php echo $f ?>
+<table border="2">
+    <th>时段</th>
+    <th>访问量</th>
+    <th>百分比</th>
+    <?php foreach($brr as $v){?>
+    <tr>
+        <td><?php echo $v[0] ?></td>
+        <td><?php echo $v[1] ?></td>
+        <td><?php echo $v[2] ?></td>
+    </tr>
+    <?php } ?>
+
+</table>
+</body>
+</html>

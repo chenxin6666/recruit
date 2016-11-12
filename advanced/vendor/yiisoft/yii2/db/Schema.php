@@ -41,10 +41,7 @@ abstract class Schema extends Object
      * The following are the supported abstract column data types.
      */
     const TYPE_PK = 'pk';
-    const TYPE_UPK = 'upk';
     const TYPE_BIGPK = 'bigpk';
-    const TYPE_UBIGPK = 'ubigpk';
-    const TYPE_CHAR = 'char';
     const TYPE_STRING = 'string';
     const TYPE_TEXT = 'text';
     const TYPE_SMALLINT = 'smallint';
@@ -107,7 +104,7 @@ abstract class Schema extends Object
     /**
      * Loads the metadata for the specified table.
      * @param string $name table name
-     * @return null|TableSchema DBMS-dependent table metadata, null if the table does not exist.
+     * @return TableSchema DBMS-dependent table metadata, null if the table does not exist.
      */
     abstract protected function loadTableSchema($name);
 
@@ -115,7 +112,7 @@ abstract class Schema extends Object
      * Obtains the metadata for the named table.
      * @param string $name table name. The table name may contain schema name if any. Do not quote the table name.
      * @param boolean $refresh whether to reload the table schema even if it is found in the cache.
-     * @return null|TableSchema table metadata. Null if the named table does not exist.
+     * @return TableSchema table metadata. Null if the named table does not exist.
      */
     public function getTableSchema($name, $refresh = false)
     {
@@ -356,12 +353,12 @@ abstract class Schema extends Object
      * Returns all unique indexes for the given table.
      * Each array element is of the following structure:
      *
-     * ```php
+     * ~~~
      * [
      *  'IndexName1' => ['col1' [, ...]],
      *  'IndexName2' => ['col2' [, ...]],
      * ]
-     * ```
+     * ~~~
      *
      * This method should be overridden by child classes in order to support this feature
      * because the default implementation simply throws an exception
@@ -522,7 +519,7 @@ abstract class Schema extends Object
      */
     public function quoteColumnName($name)
     {
-        if (strpos($name, '(') !== false || strpos($name, '[[') !== false) {
+        if (strpos($name, '(') !== false || strpos($name, '[[') !== false || strpos($name, '{{') !== false) {
             return $name;
         }
         if (($pos = strrpos($name, '.')) !== false) {
@@ -531,9 +528,7 @@ abstract class Schema extends Object
         } else {
             $prefix = '';
         }
-        if (strpos($name, '{{') !== false) {
-            return $name;
-        }
+
         return $prefix . $this->quoteSimpleColumnName($name);
     }
 
@@ -598,9 +593,9 @@ abstract class Schema extends Object
         ];
         if (isset($typeMap[$column->type])) {
             if ($column->type === 'bigint') {
-                return PHP_INT_SIZE === 8 && !$column->unsigned ? 'integer' : 'string';
+                return PHP_INT_SIZE == 8 && !$column->unsigned ? 'integer' : 'string';
             } elseif ($column->type === 'integer') {
-                return PHP_INT_SIZE === 4 && $column->unsigned ? 'string' : 'integer';
+                return PHP_INT_SIZE == 4 && $column->unsigned ? 'string' : 'integer';
             } else {
                 return $typeMap[$column->type];
             }

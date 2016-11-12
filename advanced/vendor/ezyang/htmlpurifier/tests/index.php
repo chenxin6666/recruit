@@ -149,7 +149,7 @@ $FS = new FSTools();
 
 // handle test dirs
 foreach ($test_dirs as $dir) {
-    $raw_files = $FS->globr($dir, '*Liuyan.php');
+    $raw_files = $FS->globr($dir, '*Test.php');
     foreach ($raw_files as $file) {
         $file = str_replace('\\', '/', $file);
         if (isset($test_dirs_exclude[$file])) continue;

@@ -42,9 +42,9 @@ class ListView extends BaseListView
      *
      * If this property is specified as a callback, it should have the following signature:
      *
-     * ```php
+     * ~~~
      * function ($model, $key, $index, $widget)
-     * ```
+     * ~~~
      */
     public $itemView;
     /**
@@ -103,8 +103,12 @@ class ListView extends BaseListView
         }
         $options = $this->itemOptions;
         $tag = ArrayHelper::remove($options, 'tag', 'div');
-        $options['data-key'] = is_array($key) ? json_encode($key, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) : (string) $key;
+        if ($tag !== false) {
+            $options['data-key'] = is_array($key) ? json_encode($key, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) : (string) $key;
 
-        return Html::tag($tag, $content, $options);
+            return Html::tag($tag, $content, $options);
+        } else {
+            return $content;
+        }
     }
 }

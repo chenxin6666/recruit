@@ -27,7 +27,7 @@ class ColumnSchema extends Object
     public $allowNull;
     /**
      * @var string abstract type of this column. Possible abstract types include:
-     * char, string, text, boolean, smallint, integer, bigint, float, decimal, datetime,
+     * string, text, boolean, smallint, integer, bigint, float, decimal, datetime,
      * timestamp, time, date, binary, and money.
      */
     public $type;
@@ -113,7 +113,7 @@ class ColumnSchema extends Object
      */
     protected function typecast($value)
     {
-        if ($value === '' && $this->type !== Schema::TYPE_TEXT && $this->type !== Schema::TYPE_STRING && $this->type !== Schema::TYPE_BINARY && $this->type !== Schema::TYPE_CHAR) {
+        if ($value === '' && $this->type !== Schema::TYPE_TEXT && $this->type !== Schema::TYPE_STRING && $this->type !== Schema::TYPE_BINARY) {
             return null;
         }
         if ($value === null || gettype($value) === $this->phpType || $value instanceof Expression) {

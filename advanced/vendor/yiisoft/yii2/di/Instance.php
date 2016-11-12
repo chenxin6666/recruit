@@ -25,10 +25,7 @@ use yii\base\InvalidConfigException;
  *
  * ```php
  * $container = new \yii\di\Container;
- * $container->set('cache', [
- *     'class' => 'yii\caching\DbCache',
- *     'db' => Instance::of('db')
- * ]);
+ * $container->set('cache', 'yii\caching\DbCache', Instance::of('db'));
  * $container->set('db', [
  *     'class' => 'yii\db\Connection',
  *     'dsn' => 'sqlite:path/to/file.db',
@@ -110,7 +107,9 @@ class Instance
      */
     public static function ensure($reference, $type = null, $container = null)
     {
-        if (is_array($reference)) {
+        if ($reference instanceof $type) {
+            return $reference;
+        } elseif (is_array($reference)) {
             $class = isset($reference['class']) ? $reference['class'] : $type;
             if (!$container instanceof Container) {
                 $container = Yii::$container;
@@ -123,13 +122,11 @@ class Instance
 
         if (is_string($reference)) {
             $reference = new static($reference);
-        } elseif ($type === null || $reference instanceof $type) {
-            return $reference;
         }
 
         if ($reference instanceof self) {
             $component = $reference->get($container);
-            if ($type === null || $component instanceof $type) {
+            if ($component instanceof $type || $type === null) {
                 return $component;
             } else {
                 throw new InvalidConfigException('"' . $reference->id . '" refers to a ' . get_class($component) . " component. $type is expected.");

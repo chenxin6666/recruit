@@ -41,8 +41,7 @@ class ActiveField extends Component
      * If a value is null, the corresponding attribute will not be rendered.
      * The following special options are recognized:
      *
-     * - tag: the tag name of the container element. Defaults to "div". Setting it to `false` will not render a container tag.
-     *   See also [[\yii\helpers\Html::tag()]].
+     * - tag: the tag name of the container element. Defaults to "div".
      *
      * If you set a custom `id` for the container element, you may need to adjust the [[$selectors]] accordingly.
      *
@@ -68,9 +67,8 @@ class ActiveField extends Component
      * merged with this property when rendering the error tag.
      * The following special options are recognized:
      *
-     * - tag: the tag name of the container element. Defaults to "div". Setting it to `false` will not render a container tag.
-     *   See also [[\yii\helpers\Html::tag()]].
-     * - encode: whether to encode the error output. Defaults to `true`.
+     * - tag: the tag name of the container element. Defaults to "div".
+     * - encode: whether to encode the error output. Defaults to true.
      *
      * If you set a custom `id` for the error element, you may need to adjust the [[$selectors]] accordingly.
      *
@@ -88,8 +86,7 @@ class ActiveField extends Component
      * merged with this property when rendering the hint tag.
      * The following special options are recognized:
      *
-     * - tag: the tag name of the container element. Defaults to "div". Setting it to `false` will not render a container tag.
-     *   See also [[\yii\helpers\Html::tag()]].
+     * - tag: the tag name of the container element. Defaults to "div".
      *
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
@@ -146,12 +143,6 @@ class ActiveField extends Component
      */
     public $parts = [];
 
-    /**
-     * @var string this property holds a custom input id if it was set using [[inputOptions]] or in one of the
-     * `$options` parameters of the `input*` methods.
-     */
-    private $_inputId;
-
 
     /**
      * PHP magic method that returns the string representation of this object.
@@ -178,11 +169,11 @@ class ActiveField extends Component
      * and use them as the content.
      * If a callable, it will be called to generate the content. The signature of the callable should be:
      *
-     * ```php
+     * ~~~
      * function ($field) {
      *     return $html;
      * }
-     * ```
+     * ~~~
      *
      * @return string the rendering result
      */
@@ -222,7 +213,7 @@ class ActiveField extends Component
             }
         }
 
-        $inputID = $this->getInputId();
+        $inputID = Html::getInputId($this->model, $this->attribute);
         $attribute = Html::getAttributeName($this->attribute);
         $options = $this->options;
         $class = isset($options['class']) ? [$options['class']] : [];
@@ -277,17 +268,18 @@ class ActiveField extends Component
     /**
      * Generates a tag that contains the first validation error of [[attribute]].
      * Note that even if there is no validation error, this method will still return an empty error tag.
-     * @param array|false $options the tag options in terms of name-value pairs. It will be merged with [[errorOptions]].
+     * @param array|boolean $options the tag options in terms of name-value pairs. It will be merged with [[errorOptions]].
      * The options will be rendered as the attributes of the resulting tag. The values will be HTML-encoded
-     * using [[Html::encode()]]. If this parameter is false, no error tag will be rendered.
+     * using [[Html::encode()]]. If a value is null, the corresponding attribute will not be rendered.
      *
      * The following options are specially handled:
      *
      * - tag: this specifies the tag name. If not set, "div" will be used.
-     *   See also [[\yii\helpers\Html::tag()]].
+     *
+     * If this parameter is false, no error tag will be rendered.
      *
      * If you set a custom `id` for the error element, you may need to adjust the [[$selectors]] accordingly.
-     * @see $errorOptions
+     *
      * @return $this the field object itself
      */
     public function error($options = [])
@@ -311,7 +303,6 @@ class ActiveField extends Component
      * The following options are specially handled:
      *
      * - tag: this specifies the tag name. If not set, "div" will be used.
-     *   See also [[\yii\helpers\Html::tag()]].
      *
      * @return $this the field object itself
      */
@@ -430,10 +421,6 @@ class ActiveField extends Component
         // https://github.com/yiisoft/yii2/pull/795
         if ($this->inputOptions !== ['class' => 'form-control']) {
             $options = array_merge($this->inputOptions, $options);
-        }
-        // https://github.com/yiisoft/yii2/issues/8779
-        if (!isset($this->form->options['enctype'])) {
-            $this->form->options['enctype'] = 'multipart/form-data';
         }
         $this->adjustLabelFor($options);
         $this->parts['{input}'] = Html::activeFileInput($this->model, $this->attribute, $options);
@@ -686,11 +673,7 @@ class ActiveField extends Component
      */
     protected function adjustLabelFor($options)
     {
-        if (!isset($options['id'])) {
-            return;
-        }
-        $this->_inputId = $options['id'];
-        if (!isset($this->labelOptions['for'])) {
+        if (isset($options['id']) && !isset($this->labelOptions['for'])) {
             $this->labelOptions['for'] = $options['id'];
         }
     }
@@ -729,8 +712,8 @@ class ActiveField extends Component
 
         $options = [];
 
-        $inputID = $this->getInputId();
-        $options['id'] = Html::getInputId($this->model, $this->attribute);
+        $inputID = Html::getInputId($this->model, $this->attribute);
+        $options['id'] = $inputID;
         $options['name'] = $this->attribute;
 
         $options['container'] = isset($this->selectors['container']) ? $this->selectors['container'] : ".field-$inputID";
@@ -764,15 +747,5 @@ class ActiveField extends Component
             'encodeError' => true,
             'error' => '.help-block',
         ]);
-    }
-
-    /**
-     * Returns the HTML `id` of the input element of this form field.
-     * @return string the input id.
-     * @since 2.0.7
-     */
-    protected function getInputId()
-    {
-        return $this->_inputId ?: Html::getInputId($this->model, $this->attribute);
     }
 }
