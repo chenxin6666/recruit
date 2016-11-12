@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<title>µÇÂ¼Ò³Ãæ - BootstrapºóÌ¨¹ÜÀíÏµÍ³Ä£°æAceÏÂÔØ</title>
-		<meta name="keywords" content="BootstrapÄ£°æ,BootstrapÄ£°æÏÂÔØ,Bootstrap½Ì³Ì,BootstrapÖĞÎÄ" />
-		<meta name="description" content="Õ¾³¤ËØ²ÄÌá¹©BootstrapÄ£°æ,Bootstrap½Ì³Ì,BootstrapÖĞÎÄ·­ÒëµÈÏà¹ØBootstrap²å¼şÏÂÔØ" />
+		<meta charset="utf-8">
+		<title>æ‹›è˜ç½‘åå°ç™»å½•</title>
+		<meta name="keywords" content="Bootstrapæ¨¡ç‰ˆ,Bootstrapæ¨¡ç‰ˆä¸‹è½½,Bootstrapæ•™ç¨‹,Bootstrapä¸­æ–‡" />
+		<meta name="description" content="ç«™é•¿ç´ ææä¾›Bootstrapæ¨¡ç‰ˆ,Bootstrapæ•™ç¨‹,Bootstrapä¸­æ–‡ç¿»è¯‘ç­‰ç›¸å…³Bootstrapæ’ä»¶ä¸‹è½½" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- basic styles -->
@@ -41,7 +41,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="login-layout">
+	<body class="login-layout" style="background-image:url(4.jpg);  background-size:100%;">
 		<div class="main-container">
 			<div class="main-content">
 				<div class="row">
@@ -194,30 +194,42 @@
 
 											<form>
 												<fieldset>
-													<label class="block clearfix">
+													<!-- <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="email" class="form-control" placeholder="Email" />
+															<input type="text" class="form-control" placeholder="username" />
 															<i class="icon-envelope"></i>
 														</span>
-													</label>
+													</label> -->
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Username" />
+															<input type="text" class="form-control" placeholder="Username" id="username"/>
 															<i class="icon-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Password" />
+															<input type="password" class="form-control" placeholder="Password" id="pwd" />
 															<i class="icon-lock"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Repeat password" />
+															<input type="password" class="form-control" placeholder="Repeat password" id="pwd1" />
+															<i class="icon-retweet"></i>
+														</span>
+													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															ç”¨æˆ·ç±»å‹ï¼š
+															<select name="type_id" id="type_id">
+															<?php foreach($type as $k=>$v):?>
+																<option value="<?=$k?>"><?=$v;?></option>
+															<?php endforeach;?>
+															</select>
 															<i class="icon-retweet"></i>
 														</span>
 													</label>
@@ -238,7 +250,7 @@
 															Reset
 														</button>
 
-														<button type="button" class="width-65 pull-right btn btn-sm btn-success">
+														<button type="button" class="width-65 pull-right btn btn-sm btn-success" id="regist">
 															Register
 															<i class="icon-arrow-right icon-on-right"></i>
 														</button>
@@ -266,7 +278,7 @@
 
 		<!--[if !IE]> -->
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="js/jq.js"></script>
 
 		<!-- <![endif]-->
 
@@ -303,3 +315,23 @@
 	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>
+
+<script>
+	/**æ³¨å†Œç”¨æˆ·*/
+	$(function(){
+		$("#regist").click(function(){
+			var username = $("#username").val();
+			var pwd      = $("#pwd").val();
+			var pwd1     = $("#pwd1").val();
+			var type_id  = $("#type_id").val();
+			// alert(type_id);
+			if(pwd!=pwd1){
+				alert('ä¸¤æ¬¡å¯†ç ä¸ä¸€è‡´');return;
+			}
+			// alert('ok')
+			$.get("?r=regist/doregist",{username:username,pwd:pwd,type_id:type_id},function(msg){
+				alert(msg)
+			})
+		})
+	})
+</script>
